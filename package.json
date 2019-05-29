@@ -1,5 +1,5 @@
 {
-  "name": "bmaker-models",
+  "name": "@bmaker/models",
   "version": "v1.0.0",
   "license": "GPL-3.0",
   "description": "This project stores all database models",
