@@ -8,6 +8,7 @@
     "Jesús Vállez Gomis <jesusvg91@gmail.com> (https://jesusvallez.github.io/)",
     "Sergio Novillo Felix <sergio.nf96@gmail.com>"
   ],
+  "types": "src/index",
   "repository": {
     "type": "git",
     "url": "ssh://git@stash.bq.com:7999/swrob/bmaker-models.git"
