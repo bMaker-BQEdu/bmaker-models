@@ -1,4 +1,4 @@
-var some = require('lodash.some')
+var _ = require('lodash')
 
 const ERRORS = {
   '400': 'Bad request. Invalid data',
@@ -24,7 +24,7 @@ function handleValidationError (err, _res, next) {
   if (err) {
     if (err.name === 'ValidationError') {
       // If any validation error is due to required fields, respond with 422
-      if (some(err.errors, function (error) {
+      if (_.some(err.errors, function (error) {
         return error.name === 'ValidatorError' &&
                         error.properties.type === 'required'
       })) {

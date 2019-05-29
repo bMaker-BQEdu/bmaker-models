@@ -5,7 +5,5 @@ exports.printMsg = function () {
   console.log('This is a message from the demo package')
 }
 
-exports = {
-  ISBNSchema: ISBNSchema,
-  LicenseSchema: LicenseSchema
-}
+exports.ISBNSchema = ISBNSchema
+exports.LicenseSchema = LicenseSchema
