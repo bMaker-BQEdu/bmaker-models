@@ -1,6 +1,8 @@
-import { Schema, model } from 'mongoose'
-import { ISBNSchema } from '../isbn/isbn.model'
-import { handleValidationError } from '../utils'
+var handleValidationError = require('../utils')
+var ISBNSchema = require('../isbn/isbn.model')
+var mongoose = require('mongoose')
+
+var Schema = mongoose.Schema
 
 /**
  * License schema
@@ -70,6 +72,4 @@ LicenseSchema.pre('count', hideUsername)
 LicenseSchema.post('validate', handleValidationError)
 LicenseSchema.post('findOneAndUpdate', handleValidationError)
 
-const License = model('License', LicenseSchema)
-
-export { License, LicenseSchema }
+module.exports.LicenseSchema = LicenseSchema

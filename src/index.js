@@ -1,9 +1,7 @@
-import { ISBN, ISBNSchema } from './models/license/isbn/isbn.model'
-import { License, LicenseSchema } from './models/license/license/license.model'
+var ISBNSchema = require('./models/license/isbn/isbn.model')
+var LicenseSchema = require('./models/license/license/license.model')
 
-export {
-  ISBN,
-  ISBNSchema,
-  License,
-  LicenseSchema
+module.exports = {
+  ISBNSchema: ISBNSchema,
+  LicenseSchema: LicenseSchema
 }

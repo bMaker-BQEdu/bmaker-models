@@ -1,4 +1,5 @@
-import { Schema, model } from 'mongoose'
+var mongoose = require('mongoose')
+var Schema = mongoose.Schema
 
 const ISBNSchema = new Schema({
   code: String,
@@ -14,6 +15,5 @@ const ISBNSchema = new Schema({
 
 // Indexes
 ISBNSchema.index({ code: 1 }, { unique: true })
-const ISBN = model('ISBN', ISBNSchema)
 
-export { ISBN, ISBNSchema }
+module.exports.ISBNSchema = ISBNSchema

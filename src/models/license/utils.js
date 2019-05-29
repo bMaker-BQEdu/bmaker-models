@@ -1,4 +1,4 @@
-import { some } from 'lodash'
+var some = require('lodash.some')
 
 const ERRORS = {
   '400': 'Bad request. Invalid data',
@@ -71,4 +71,6 @@ function getErrorFromCode (errCode) {
   return error
 }
 
-export { getValidHttpErrorCode, handleValidationError, handleDuplicateKeyError }
+module.exports.getValidHttpErrorCode = getValidHttpErrorCode
+module.exports.handleValidationError = handleValidationError
+module.exports.handleDuplicateKeyError = handleDuplicateKeyError
