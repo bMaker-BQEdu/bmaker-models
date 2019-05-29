@@ -1,0 +1,31 @@
+node_modules/
+#dist/
+#app/dist/
+.tmp/
+*.log
+*~
+package-lock.json
+
+# Editor File Ignore
+*.sublime-project
+*.sublime-workspace
+.idea/
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/
+
+# API Docs
+apidoc/
+
+# SonarLint
+.sonarlint
+sonarlint.json
