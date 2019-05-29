@@ -8,6 +8,7 @@
     "Jesús Vállez Gomis <jesusvg91@gmail.com> (https://jesusvallez.github.io/)",
     "Sergio Novillo Felix <sergio.nf96@gmail.com>"
   ],
+  "main": "src/index",
   "types": "src/index",
   "repository": {
     "type": "git",

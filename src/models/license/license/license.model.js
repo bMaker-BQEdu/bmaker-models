@@ -72,4 +72,4 @@ LicenseSchema.pre('count', hideUsername)
 LicenseSchema.post('validate', handleValidationError)
 LicenseSchema.post('findOneAndUpdate', handleValidationError)
 
-module.exports.LicenseSchema = LicenseSchema
+exports.LicenseSchema = LicenseSchema

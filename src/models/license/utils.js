@@ -71,6 +71,6 @@ function getErrorFromCode (errCode) {
   return error
 }
 
-module.exports.getValidHttpErrorCode = getValidHttpErrorCode
-module.exports.handleValidationError = handleValidationError
-module.exports.handleDuplicateKeyError = handleDuplicateKeyError
+exports.getValidHttpErrorCode = getValidHttpErrorCode
+exports.handleValidationError = handleValidationError
+exports.handleDuplicateKeyError = handleDuplicateKeyError

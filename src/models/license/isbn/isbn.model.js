@@ -16,4 +16,4 @@ const ISBNSchema = new Schema({
 // Indexes
 ISBNSchema.index({ code: 1 }, { unique: true })
 
-module.exports.ISBNSchema = ISBNSchema
+exports.ISBNSchema = ISBNSchema
